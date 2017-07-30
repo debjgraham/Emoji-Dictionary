@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F5A16FCDED799DAC0551645747614860A7C19C45",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F5A16FCDED799DAC0551645747614860A7C19C45" : 9223372036854775807,
+    "126EA57CB0176951EFA07319CEA0CAE3EE9290B5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B47C2066-3241-4FC9-9D84-30B59B0AD76D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F5A16FCDED799DAC0551645747614860A7C19C45" : "Emoji%20Dictionary\/",
+    "126EA57CB0176951EFA07319CEA0CAE3EE9290B5" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Emoji Dictionary",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Emoji Dictionary.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/github.com\/debjgraham\/FreakingiPhoneAppiOS10Swift3.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "126EA57CB0176951EFA07319CEA0CAE3EE9290B5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/debjgraham\/Emoji-Dictionary.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F5A16FCDED799DAC0551645747614860A7C19C45"
+    }
+  ]
+}
