@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -56,32 +57,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBH-eT-Hj6">
-                                <rect key="frame" x="79" y="84" width="218" height="239"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBH-eT-Hj6">
+                                <rect key="frame" x="78" y="84" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding Church" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l44-nR-Arm">
-                                <rect key="frame" x="123.5" y="343" width="128.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UWb-gT-yXR">
+                                <rect key="frame" x="125" y="343" width="129" height="74.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u5c-OE-Ynl">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="74.5"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qY-st-vvZ">
-                                <rect key="frame" x="122.5" y="384" width="130" height="20.5"/>
+                                <rect key="frame" x="122" y="383" width="130" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding Church" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l44-nR-Arm">
+                                <rect key="frame" x="16" y="343" width="343" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="39" id="4ef-dl-ecv"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="115" id="Xko-2M-Ydk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created: 2010" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgc-hz-Liq">
-                                <rect key="frame" x="133.5" y="424.5" width="108.5" height="20.5"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="ccQ-c7-UWJ"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Created: 2010" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgc-hz-Liq">
+                                <rect key="frame" x="135" y="423.5" width="109" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -89,14 +95,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="WBH-eT-Hj6" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="1ie-aq-CPM"/>
-                            <constraint firstItem="wgc-hz-Liq" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="GdW-IR-qH1"/>
-                            <constraint firstItem="wgc-hz-Liq" firstAttribute="top" secondItem="5qY-st-vvZ" secondAttribute="bottom" constant="20" id="Gpo-nE-RqH"/>
-                            <constraint firstItem="l44-nR-Arm" firstAttribute="top" secondItem="WBH-eT-Hj6" secondAttribute="bottom" constant="20" id="R56-at-TlP"/>
-                            <constraint firstItem="l44-nR-Arm" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="WGU-8Q-kxW"/>
-                            <constraint firstItem="5qY-st-vvZ" firstAttribute="top" secondItem="l44-nR-Arm" secondAttribute="bottom" constant="20" id="Zig-ob-eaP"/>
-                            <constraint firstItem="5qY-st-vvZ" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="idf-47-xqa"/>
-                            <constraint firstItem="WBH-eT-Hj6" firstAttribute="top" secondItem="W9f-O9-fag" secondAttribute="bottom" constant="20" id="vpN-R2-i31"/>
+                            <constraint firstItem="wgc-hz-Liq" firstAttribute="top" secondItem="5qY-st-vvZ" secondAttribute="bottom" constant="20" id="5ya-Pp-bql"/>
+                            <constraint firstItem="l44-nR-Arm" firstAttribute="top" secondItem="UWb-gT-yXR" secondAttribute="top" id="9LQ-zk-ld8"/>
+                            <constraint firstItem="l44-nR-Arm" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="Atj-ga-6R3"/>
+                            <constraint firstItem="l44-nR-Arm" firstAttribute="leading" secondItem="fgJ-3m-mhj" secondAttribute="leadingMargin" id="Boj-wS-TNt"/>
+                            <constraint firstItem="l44-nR-Arm" firstAttribute="trailing" secondItem="fgJ-3m-mhj" secondAttribute="trailingMargin" id="MuI-ix-mSb"/>
+                            <constraint firstItem="5qY-st-vvZ" firstAttribute="top" secondItem="l44-nR-Arm" secondAttribute="bottom" constant="20" id="Wnn-tD-t7G"/>
+                            <constraint firstItem="UWb-gT-yXR" firstAttribute="centerX" secondItem="wgc-hz-Liq" secondAttribute="centerX" id="am1-O6-HOm"/>
+                            <constraint firstItem="l44-nR-Arm" firstAttribute="top" secondItem="WBH-eT-Hj6" secondAttribute="bottom" constant="20" id="dpv-dj-bEU"/>
+                            <constraint firstItem="UWb-gT-yXR" firstAttribute="leading" secondItem="fgJ-3m-mhj" secondAttribute="leading" constant="125" id="haw-iD-fzd"/>
+                            <constraint firstItem="WBH-eT-Hj6" firstAttribute="top" secondItem="W9f-O9-fag" secondAttribute="bottom" constant="20" id="l8d-5d-MP4"/>
+                            <constraint firstItem="5qY-st-vvZ" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="lC2-Ve-WCb"/>
                         </constraints>
                     </view>
                     <connections>

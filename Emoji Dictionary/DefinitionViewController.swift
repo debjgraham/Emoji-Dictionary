@@ -10,7 +10,7 @@ import UIKit
 
 class DefinitionViewController: UIViewController {
     
-    var emoji = "No emoji"
+    var emoji = Emoji()
     /*var emojidefs = ["Cool dude", "Crushing on you", "Poo", "Purple Nails", "Dancing, dancing, she's a dancing machine", "Remember me, wearing a nice dress, staring at the sunset", "Hampster", "A rose by any other name", "Hibiscus", "I'm a nerd, you're a nerd, let's all be nerds", "I wanna hold your hand"]
  */
 
@@ -24,52 +24,11 @@ class DefinitionViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        emojiLabel.text = emoji
+        emojiLabel.text = emoji.stringEmoji
+        createdLabel.text = "Created: \(emoji.createdYear)"
+        categoryLabel.text = "Category: \(emoji.category)"
+        definitionLabel.text = emoji.definition
         
-        if emoji == "😎" {
-            definitionLabel.text = "Cool dude"
-            categoryLabel.text = "Category: Smiley"
-            createdLabel.text = "Created: 2014"
-        }
-        if emoji == "😍" {
-            definitionLabel.text = "Crushing on you"
-            categoryLabel.text = "Category: Smiley"
-            createdLabel.text = "Created: 2015"
-        }
-        if emoji == "💩" {
-            definitionLabel.text = "Poo"
-            categoryLabel.text = "Category: Strange things"
-            createdLabel.text = "Created: 2012"
-        }
-        if emoji == "💅" {
-            definitionLabel.text = "Purple Nails"
-            categoryLabel.text = "Category: Things"
-            createdLabel.text = "Created: 2010"
-        }
-        if emoji == "💃🏾" {
-            definitionLabel.text = "Dancing, dancing, she's a dancing machine"
-        }
-        if emoji == "👗🌆" {
-            definitionLabel.text = "Say you'll remember me standing in a nice dress, staring at the sunset babe; red lips and rosy cheeks. Say you'll see me again even if it's just in your wildest dreams"
-        }
-        if emoji == "🐹" {
-            definitionLabel.text = "Hampster"
-        }
-        if emoji == "🌹" {
-            definitionLabel.text = "A rose by any other name"
-        }
-        if emoji == "🌺" {
-            definitionLabel.text = "Hibiscus"
-        }
-        if emoji == "🤓" {
-            definitionLabel.text = "I'm a nerd, you're a nerd, let's all be nerds"
-        }
-        if emoji == "👫" {
-            definitionLabel.text = "I wanna hold your hand"
-        }
-        
-        //    var emojis = ["😎","😍","💩","💅","💃🏾","👗","🐹","🌹","🌺","🤓", "👫"]
-
     }
 
     override func didReceiveMemoryWarning() {
