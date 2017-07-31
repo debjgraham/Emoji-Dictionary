@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -58,15 +57,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="💒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBH-eT-Hj6">
-                                <rect key="frame" x="79" y="104" width="218" height="239"/>
+                                <rect key="frame" x="79" y="84" width="218" height="239"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="200"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wedding Church" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l44-nR-Arm">
-                                <rect key="frame" x="26" y="393" width="323" height="87"/>
+                                <rect key="frame" x="123.5" y="343" width="128.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qY-st-vvZ">
+                                <rect key="frame" x="122.5" y="384" width="130" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="87" id="9xR-wA-ZKY"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="39" id="4ef-dl-ecv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created: 2010" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="6" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgc-hz-Liq">
+                                <rect key="frame" x="133.5" y="424.5" width="108.5" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="40" id="ccQ-c7-UWJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -75,15 +89,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="l44-nR-Arm" firstAttribute="leading" secondItem="fgJ-3m-mhj" secondAttribute="leadingMargin" constant="10" id="49c-yn-1PF"/>
-                            <constraint firstItem="WBH-eT-Hj6" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="5pk-Ag-A5t"/>
-                            <constraint firstItem="WBH-eT-Hj6" firstAttribute="centerX" secondItem="l44-nR-Arm" secondAttribute="centerX" id="7QP-X4-GNu"/>
-                            <constraint firstItem="WBH-eT-Hj6" firstAttribute="top" secondItem="W9f-O9-fag" secondAttribute="bottom" constant="40" id="gCr-HT-HF9"/>
-                            <constraint firstItem="l44-nR-Arm" firstAttribute="top" secondItem="WBH-eT-Hj6" secondAttribute="bottom" constant="50" id="tC8-BS-pLF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="l44-nR-Arm" secondAttribute="trailing" constant="10" id="xwd-Xd-S7s"/>
+                            <constraint firstItem="WBH-eT-Hj6" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="1ie-aq-CPM"/>
+                            <constraint firstItem="wgc-hz-Liq" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="GdW-IR-qH1"/>
+                            <constraint firstItem="wgc-hz-Liq" firstAttribute="top" secondItem="5qY-st-vvZ" secondAttribute="bottom" constant="20" id="Gpo-nE-RqH"/>
+                            <constraint firstItem="l44-nR-Arm" firstAttribute="top" secondItem="WBH-eT-Hj6" secondAttribute="bottom" constant="20" id="R56-at-TlP"/>
+                            <constraint firstItem="l44-nR-Arm" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="WGU-8Q-kxW"/>
+                            <constraint firstItem="5qY-st-vvZ" firstAttribute="top" secondItem="l44-nR-Arm" secondAttribute="bottom" constant="20" id="Zig-ob-eaP"/>
+                            <constraint firstItem="5qY-st-vvZ" firstAttribute="centerX" secondItem="fgJ-3m-mhj" secondAttribute="centerX" id="idf-47-xqa"/>
+                            <constraint firstItem="WBH-eT-Hj6" firstAttribute="top" secondItem="W9f-O9-fag" secondAttribute="bottom" constant="20" id="vpN-R2-i31"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryLabel" destination="5qY-st-vvZ" id="xqv-gi-sSk"/>
+                        <outlet property="createdLabel" destination="wgc-hz-Liq" id="hBP-2h-YAP"/>
                         <outlet property="definitionLabel" destination="l44-nR-Arm" id="a2R-vc-wf5"/>
                         <outlet property="emojiLabel" destination="WBH-eT-Hj6" id="7ce-F0-0DX"/>
                     </connections>

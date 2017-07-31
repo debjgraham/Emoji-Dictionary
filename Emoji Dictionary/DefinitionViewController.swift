@@ -15,6 +15,8 @@ class DefinitionViewController: UIViewController {
  */
 
     @IBOutlet weak var definitionLabel: UILabel!
+    @IBOutlet weak var categoryLabel: UILabel!
+    @IBOutlet weak var createdLabel: UILabel!
     
     @IBOutlet weak var emojiLabel: UILabel!
     override func viewDidLoad() {
@@ -26,15 +28,23 @@ class DefinitionViewController: UIViewController {
         
         if emoji == "😎" {
             definitionLabel.text = "Cool dude"
+            categoryLabel.text = "Category: Smiley"
+            createdLabel.text = "Created: 2014"
         }
         if emoji == "😍" {
             definitionLabel.text = "Crushing on you"
+            categoryLabel.text = "Category: Smiley"
+            createdLabel.text = "Created: 2015"
         }
         if emoji == "💩" {
             definitionLabel.text = "Poo"
+            categoryLabel.text = "Category: Strange things"
+            createdLabel.text = "Created: 2012"
         }
         if emoji == "💅" {
             definitionLabel.text = "Purple Nails"
+            categoryLabel.text = "Category: Things"
+            createdLabel.text = "Created: 2010"
         }
         if emoji == "💃🏾" {
             definitionLabel.text = "Dancing, dancing, she's a dancing machine"
